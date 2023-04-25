@@ -1,0 +1,13 @@
+python
+import csv
+
+data = [
+    ['order_id', 'customer_id', 'product_id', 'quantity', 'order_date'],
+    [1, 1, 101, 2, '2022-01-01'],
+    [2, 2, 102, 3, '2022-01-02'],
+    [3, 3, 103, 1, '2022-01-03'],
+]
+
+with open('data/orders.csv', 'w', newline='') as file:
+    writer = csv.writer(file)
+    writer.writerows(data)
