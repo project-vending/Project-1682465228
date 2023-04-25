@@ -1,0 +1,13 @@
+python
+import os
+
+# Define the file and folder paths
+folder = 'data'
+file_name = 'sales.csv'
+file_path = os.path.join(folder, file_name)
+
+# Create the empty file
+open(file_path, 'w').close()
+
+# Confirm the file was created
+print(f'{file_name} created in {folder} folder')
