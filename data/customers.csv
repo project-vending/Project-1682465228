@@ -1,0 +1,13 @@
+python
+import csv
+import os
+
+# Define the path to the customers.csv file
+file_path = os.path.join('data', 'customers.csv')
+
+# Create an empty customers.csv file with headers
+with open(file_path, mode='w', newline='') as file:
+    writer = csv.writer(file)
+    writer.writerow(['customer_id', 'first_name', 'last_name', 'email', 'phone', 'address'])
+
+print(f'Empty customers.csv file created in the data folder')
